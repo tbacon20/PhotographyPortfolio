@@ -1,0 +1,254 @@
+/* Custom NavBar */
+.bg-dark {
+  background-color: #254E73 !important;
+  color: #89CFF0 !important;
+  font-weight: bold;
+}
+
+.navbar a.nav-link:hover {
+  background-color: #89CFF0 !important;
+  color: #254E73 !important;
+  border-radius: 5px;
+}
+
+.navbar .navbar-expand-lg .navbar-dark .bg-dark .navbar-nav .nav-link {
+    color: #89CFF0 !important;
+    background-color: #254E73 !important;
+}
+
+.home {
+  background-color: #C0C0C0;
+}
+
+/* Home Flexbox content */
+.home-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 25px;
+  font color: #254E73;
+  padding-bottom: 70px;
+}
+
+.home-box {
+  width: 40%;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 10px
+}
+
+.home-box1 {
+  width: 90%;
+  min-height: 100px;
+  background-size: contain;
+  color: #254E73;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.home-box2 {
+  min-height: 300px;
+  background-color: #89CFF0;
+}
+
+.home-box3 {
+  min-height: 300px;
+  background-color: yellow;
+}
+
+.home-box4 {
+  min-height: 300px;
+  background-color: orange;
+}
+
+.home-box5 {
+  width: 90%;
+  min-height: 100px;
+  color: #254E73;
+  font-size: 40px;
+}
+
+@media only screen and (max-width: 900px) and (min-width: 400px) {
+  .home-container {
+    flex-wrap: wrap;
+  }
+  .home-box1 {
+    font-size: 50px;
+  }
+  .home-box4 {
+    margin-bottom: 70px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .home-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .home-box {
+    width: 90%;
+  }
+  .home-box4 {
+    margin-bottom: 70px;
+  }
+  .home-box1 {
+    font-size: 40px;
+  }
+}
+
+h1 {
+  text-align: center;
+  font-size: 70px;
+  color: #254E73;
+}
+
+.portfolio-page {
+  background-color: #C0C0C0;
+}
+/* portfolio Grid content */
+
+.portfolio {
+  display: grid;
+  grid-template: auto auto auto auto auto / 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  margin-bottom: 70px;
+}
+
+.image img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 500px) {
+  .portfolio {
+    grid-template-columns: auto;
+  }
+}
+
+/* about Flexbox */
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #C0C0C0;
+  color: #254E73;
+}
+
+.about-box {
+  width: 45%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  margin: 10px;
+  padding: 5px;
+}
+
+.profile {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.about-box1{
+
+}
+
+.about-box2{
+  align-self: center;
+  padding: 5px;
+}
+
+.about-box3{
+  background-color: #89CFF0;
+  margin-bottom: 70px;
+}
+
+.about-box4{
+  background-color: #254E73;
+  color: #89CFF0;
+  margin-bottom: 70px;
+}
+
+.about-box5{
+  background-color: yellow;
+  margin-bottom: 70px;
+}
+
+@media only screen and (max-width: 510px) {
+  .about-container {
+    flex-direction: column;
+  }
+  .about-box {
+    width: 95%;
+  }
+  .about-box2 {
+    height: 100px;
+  }
+  .about-box3 {
+    margin-bottom: 10px;
+  }
+}
+
+/* Reviews flexbox */
+.reviews {
+  display: flex;
+  margin: 20px;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+.section {
+  width: 46%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: #89cff0;
+  border-radius: 5px;
+  border-color: #254E73;
+  margin: 10px;
+  padding: 5px;
+  align-items: flex-start;
+}
+
+@media only screen and (max-width: 610px) {
+  .section {
+    width: 90%;
+  }
+  h1 {
+    font-size: 40px;
+  }
+}
+
+/* Footer */
+.footer {
+  text-align: left;
+  background-color: #254E73;
+  color: #89CFF0;
+  padding-top: 10px;
+  bottom: 0px;
+  width: 100%;
+  position: fixed;
+  height: 50px;
+}
+
+.button a {
+  color: #89CFF0;
+  background-color: #254E73;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.button a:hover {
+  color: #254e73;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 5px;
+  border: 2px solid #89CFF0;
+  background-color: #89CFF0;
+}
